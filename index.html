@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Created/Designed By Samyak Bumb -->
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="copyright" content="Samyak Bumb">
+
+    <title>Form By Samyak</title>
+
+    <link rel="stylesheet" href="./src/css/style.css">
+
+  </head>
+
+  <body>
+
+    <div class="main">
+      <h1 class="form__title">Form</h1>
+      <!-- <form action="backend.php"> --> <!-- Here We can Use "action" tag to store the data in the given File(s) -->
+      <form>
+
+        <div class="p">
+          <label for="name">Name</label>
+          <input type="text" name="myName" size="20"> <!-- "Size" tag changes the width of text box -->
+        </div> <!-- Here "br" tag is used to Break the Line BUT We've Added "div" tag So there is no need of it -->
+
+        <div class="p">
+          <!-- The "name" tag here is used so that the backend can recognize the tag that we are using -->
+          <label>Email</label>
+          <input type="email" name="myEmail" placeholder="john@cmail.com"> <!-- Here "placehoder" is used to give hint to what to type -->
+        </div>
+
+        <div class="p">
+          <label>Password</label>
+          <!-- NOTE: To Change the type for Diffrent Elements -->
+          <input type="password" name="myPass" required> <!-- Here "required" tag is Used to Compulsory fill that Particular input -->
+        </div>
+
+        <div class="p">
+          <label>Birthdate</label>
+          <input type="date" name="myDate"> <!-- It will give the complete date form in the format of “dd/mm/yyyy” -->
+        </div>
+
+        <div class="p">
+          <label>Phone Number</label>
+          <input type="number" name="myNo" minlength="10" maxlength="10"> <!-- Here "max" tag is used to Set a Maximum Limit for a Number -->
+        </div>
+
+        <div>
+          <label>Favorite Food -</label>
+          <div>
+            <label>Banana</label>
+            <input type="checkbox" name="banana">
+          </div>
+          <div>
+            <label>Apple</label>
+            <input type="checkbox" name="apple">
+          </div>
+        </div><br>
+
+        <div>
+          <label>Gender -</label>
+          <div>
+            <label>Male</label>
+            <input type="radio" name="gender" value="male"> <!-- "value" tag is used to specify deafult value in txt box -->
+          </div>
+          <div>
+            <label>Female</label>
+            <input type="radio" name="gender" value="female">
+          </div>
+        </div><br>
+
+        <div>
+          <label>File</label>
+          <input type="file" name="file" class="f">
+        </div>
+
+        <div>
+          <label for="url">URL</label>
+          <input type="url" name="url" placeholder="https://example.com">
+        </div>
+
+        <div>
+          <label for="color">Color : </label>
+          <input type="color" name="color" class="bt">
+        </div>
+
+        <div>
+          <label>Visuals</label>
+          <!-- Select tag is used to create Drop-down list -->
+          <select name="eyeColor" multiple> <!-- "multiple" tag alloes the user to select more than 1 Value -->
+            <option label="Red" value="Red"></option>
+            <option value="Green">Green</option>
+            <option value="Blue">Blue</option>
+          </select>
+        </div><br>
+
+        <div class="p">
+          <label>I Agree to Terms & Conditions</label>
+          <input type="checkbox" checked> <!-- The "checked" -->
+        </div>
+
+        <div>
+          <button type="reset" class="bttn">Reset!</button> <!-- To Reset all the filled info.-->
+          <button type="submit">Submit!</button> <!-- To get the submit button in the form, the syntax is this-->
+        </div>
+
+      </form>
+
+    </div>
+
+  </body>
+
+</html>
